@@ -47,7 +47,7 @@ header span {
 }
 
 nav {
-    background: #333;
+    background-color: var(--secondary-color);
 }
 
 .navigation {
