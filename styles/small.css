@@ -13,7 +13,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     background-color: var(--background-color);
     color: var(--secondary-color);
 }
@@ -121,20 +121,7 @@ section p {
   
 }
 
-.filters {
-    display: flex;
-    gap: .5rem;
-    margin: 1rem 0;
-}
 
-.filters button {
-    padding: .5rem 1rem;
-}
-
-#course-container {
-    display: grid;
-    gap: .5rem;
-}
 
 footer {
     display: flex;
