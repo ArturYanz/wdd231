@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arturo Yánez">
+    <meta name="description" content="Course home page for WDD 231 | Arturo Yánez">
+
+    <title>WDD 231 | Home</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/hogar.svg" alt="Site Logo">
+        <span>Arturo Yánez</span>
+        
+        <button id="burger-btn" aria-label="Open navigation menu"></button>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1> WDD 231 - Course Home</h1>
+
+        <section class="about">
+            <h2>About Me</h2>
+            <p>
+                I am Arturo Yánez, and I live in Chile. This course is the final class for completing my first certificate at BYU. During this program, I have been learning the fundamentals of web design and programming, and I've really enjoyed building and organizing web pages.
+            </p>
+            <p>
+                In my free time, I like watching movies, listening to music and following soccer. Music is an important part of my life,
+                an I play the saxophone whenever I can. I also enjoy programming and designing websites, and I look forward to
+                continuing to develop my skills in web development.
+            </p>
+        </section>
+
+        <section class="photo">
+            <h2>Student Photo</h2>
+            <img src="images/profile.jpg" alt="picture of Arturo Yánez">
+        </section>
+
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+
+            <div class="filters">
+                <button id="all">ALL</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+
+            <div id="course-container"></div>
+
+            <p>Total Credits: <span id="totalCredits"></span></p>
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="social">
+        
+            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.svg" alt="Facebook profile link" width="16"
+                    height="16"></a>
+            <a href="https://github.com/ArturYanz/wdd231.git" target="_blank"><img src="images/github.svg" alt="Github profile link"
+                    width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/arturo-y%C3%A1nez-troncoso-a9a8b8391/es/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BGSQUlFBvSyWlOjeEL5MhOw%3D%3D"
+                target="_blank"><img src="images/linkedin.svg" alt="Linked In profile link" width="16" height="16"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="images/twitter-x.svg" alt="Twitter profile link" width="16"
+                    height="16"></a>
+        </div>
+
+        <p>
+            &copy; <span id="currentyear"></span> Arturo Yánez - Chile 
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
