@@ -1,0 +1,29 @@
+{
+    "family_name": "Johnson",
+    "date_moved":"2020-02-20",
+    "number_of_people": 4,
+    "visited_by_bishopric": true,
+    "family_members": [
+        {
+            "name":"Paul Johnson",
+            "gender": "Male",
+            "birthdate": "1985-11-05"
+        },
+        {
+            "name": "Laura Johnson",
+            "gender": "Female",
+            "birthdate": "1989-04-19"
+        },
+        {
+            "name": "Mariah Johnson",
+            "gender": "Female",
+            "birthdate": "2010-03-10"
+        },
+        {
+            "name": "Christopher Johnson",
+            "gender": "Male",
+            "birthdate": "2012-09-20"
+        }
+
+    ]
+}
