@@ -45,6 +45,8 @@ function displayMembers(members) {
         img.setAttribute("width", "440");
         img.setAttribute("height", "300");
         img.setAttribute("loading", "lazy");
+        img.setAttribute("decoding", "async");
+
         link.setAttribute("href", member.company_url);
         link.textContent = "Visit Website";
 
