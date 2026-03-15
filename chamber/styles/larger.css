@@ -1,0 +1,68 @@
+:root {
+    --primary-color: #8c0d0d;
+    --secondary-color: #ffedc3;
+}
+
+@media screen and (min-width: 768px) {
+   
+    header {
+    flex-wrap: nowrap;
+    padding: 1.5rem;
+   }
+   
+   
+
+   header span {
+       font-size: 20px;
+       font-weight: bold;
+   }
+
+   header img {
+       width: 60px;
+   }
+
+   header nav {
+       font-size: 25px;
+   }
+   
+   
+    header nav {
+    width: auto;
+   }
+
+    #burger-btn {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navigation a:hover {
+        background-color: var(--primary-color);
+        padding: 0;
+        border-radius: 0;
+        font-weight: bold;
+        border-bottom: 4px solid white;
+    }
+
+    /* FOOTER */
+
+    footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .personal p {
+        margin-right: .5rem;
+    }
+
+    /* CARDS */
+
+    #members.grid {
+        grid-template-columns: repeat(3,1fr);
+        
+    }
+}

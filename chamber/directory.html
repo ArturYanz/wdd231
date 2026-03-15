@@ -14,8 +14,61 @@
     <meta property="og:description" content="Directory page to find all company members information from the Santiago Chamber of Commerce">
     <meta property="og:url" content="https://arturyanz.github.io/wdd231/chamber/directory.html">
     <meta property="og:image" content="https://arturyanz.github.io/wdd231/chamber/images/og-image-chamber.jpg">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/chamber.js" defer></script>
+
 </head>
 <body>
-    
+    <header>
+        <img src="images/chile-logo.png" alt="Site Logo">
+        <span>Santiago de Chile Chamber of Commerce</span>
+
+        <button id="burger-btn" aria-label="Open navigation menu"></button>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="www.arturyanz.github.io/wdd231/chamber/directory.html">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="view-btn">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
+        <section id="members" class="grid"></section>
+    </main>
+
+    <footer>
+        <div class="info">
+            <p><strong>Santiago Chamber of Commerce</strong></p>
+            <p>Av. Matta 3845</p>
+            <p>info@scamara.org</p>
+            <p>+56 9 4328 9874</p>
+        </div>
+        <div class="social">
+        
+            <a href="https://www.facebook.com" target="_blank"><img src="../images/facebook.svg" alt="Facebook profile link"
+                    width="16" height="16"></a>
+            <a href="https://www.linkedin.com"
+                target="_blank"><img src="../images/linkedin.svg" alt="Linked In profile link" width="16" height="16"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="../images/twitter-x.svg" alt="Twitter profile link"
+                    width="16" height="16"></a>
+        </div>
+        <div class="personal">
+            <p>WDD231 Class Project</p>
+            <p>Arturo Yánez</p>
+            <p>&copy;<span id="currentyear"></span> Santiago Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
 </body>
 </html>

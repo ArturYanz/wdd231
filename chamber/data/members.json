@@ -1,0 +1,69 @@
+
+{
+    "company_members": [
+        {
+            "company_name": "Aconcagua Foods",
+            "company_address": "José Alberto Bravo 292, Santiago, Chile",
+            "company_phone": "(2) 2821 8000",
+            "company_url": "https://www.aconcaguafoods.cl",
+            "company_img": "images/aconcagua-logo.png",
+            "membership_level": 3,
+            "industry": "Food"
+        },
+        {
+            "company_name": "Cencosud",
+            "company_address": "Av. Kennedy 9001, Las Condes, Santiago, Chile",
+            "company_phone": "+56 9 2916 2000",
+            "company_url": "https://www.cencosud.com",
+            "company_img": "images/cencosud-logo.svg",
+            "membership_level": 3,
+            "industry": "Retail"
+        },
+        {
+            "company_name": "Panadería Los Andes",
+            "company_address": "Av. Santa Rosa 2150, Santiago, Chile",
+            "company_phone": "+56 9 2554 7788",
+            "company_url": "https://www.panaderialosandes.cl",
+            "company_img": "images/panaderia-andes.webp",
+            "membership_level": 1,
+            "industry": "Bakery"
+        },
+        {
+            "company_name": "Transporte Cordillera",
+            "company_address": "Av. Departamental 1450, Santiago Chile",
+            "company_phone": "+56 9 8765 8155",
+            "company_url": "https://www.transportecordillera.cl",
+            "company_img": "images/transporte-cordillera.webp",
+            "membership_level": 2,
+            "industry": "Transportation"
+        },
+        {
+            "company_name": "Hotel Plaza Santiago",
+            "company_address": "Av. Libertador O'Higgins 136, Santiago, Chile",
+            "company_phone": "+56 9 2670 6000",
+            "company_url": "https://www.hotelplazasantiago.cl",
+            "company_img": "images/hotel-santiago.webp",
+            "membership_level": 3,
+            "industry": "Hospitality"
+        },
+        {
+            "company_name": "Falabella",
+            "company_address": "Av. Presidente Riesco 5685, Las Condes, Santiago, Chile",
+            "company_phone": "+56 9 2380 2000",
+            "company_url": "https://www.falabella.com",
+            "company_img": "images/falabella.jpg",
+            "membership_level": 3,
+            "industry": "Retail"
+        },
+        {
+            "company_name": "Aguas Andinas",
+            "company_address": "Av. Balmaceda 1398, Santiago, Chile",
+            "company_phone": "+56 2 2731 2400",
+            "company_url": "https://www.aguasandinas.cl",
+            "company_img": "images/aguas-andinas.webp",
+            "membership_level": 3,
+            "industry": "Water Utility"
+        }
+        
+    ]
+}
