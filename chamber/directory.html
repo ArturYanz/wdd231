@@ -32,7 +32,7 @@
 </head>
 <body>
     <header>
-        <img src="images/chile-logo.webp" alt="Site Logo">
+        <img src="images/chile-logo.webp" alt="Site Logo" width="60" height="60">
         <span>Santiago de Chile Chamber of Commerce</span>
 
         <button id="burger-btn" aria-label="Open navigation menu"></button>
@@ -40,7 +40,7 @@
         <nav>
             <ul class="navigation">
                 <li><a href="#">Home</a></li>
-                <li><a href="https://arturyanz.github.io/wdd231/chamber/directory.html">Directory</a></li>
+                <li><a href="https://arturyanz.github.io/wdd231/chamber/directory.html" aria-current="page">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Discover</a></li>
             </ul>
@@ -48,10 +48,10 @@
     </header>
 
     <main>
-        <h1>-Directory-</h1>
+        <h1>Santiago Chamber Directory</h1>
         <div class="view-btn">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
+            <button id="grid" aria-label="Grid view">Grid</button>
+            <button id="list" aria-label="List view">List</button>
         </div>
         <section id="members" class="grid"></section>
     </main>
