@@ -36,6 +36,12 @@ function displayMembers(members) {
         const phone = document.createElement("p");
         const img = document.createElement("img");
         const link = document.createElement("a");
+        const level = document.createElement("p");
+        const levels = {
+            1: "Member",
+            2: "Silver",
+            3: "Gold"
+        };
 
         name.textContent = member.company_name;
         address.textContent = member.company_address;
@@ -50,11 +56,14 @@ function displayMembers(members) {
         link.setAttribute("href", member.company_url);
         link.textContent = "Visit Website";
 
+        level.textContent = `Membership Level: ${levels[member.membership_level]}`;
+
         card.appendChild(name);
         card.appendChild(address);
         card.appendChild(img);
         card.appendChild(phone);
         card.appendChild(link);
+        card.appendChild(level);
 
         container.appendChild(card);
 
