@@ -49,11 +49,27 @@ h1 {
 
 .navigation.open {
     display: flex;
-    background-color: #600808;
+    
 }
 
 .navigation li {
     padding: .5rem;
+}
+
+.navigation .current a {
+    color: yellow;
+    font-weight: bold;
+    background-color: #600808;
+    padding: 0 10px;
+    border-radius: 10px;
+
+}
+
+.navigation .current a:hover {
+    color: yellow;
+    font-weight: bold;
+    background-color: #600808;
+    
 }
 
 .navigation a {
