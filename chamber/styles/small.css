@@ -286,6 +286,11 @@ footer {
     border-radius: 8px;
 }
 
+.hero-text h2 {
+    font-size: 2rem;
+    margin-bottom: .75rem;
+}
+
 
 .cta {
     display: inline-block;
