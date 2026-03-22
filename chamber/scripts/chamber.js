@@ -236,6 +236,6 @@ function displayForecast(data) {
 }
 
 
-if (document.querySelector(".weather")) {
+if (document.querySelector("#forecast")) {
     apiFetch();
 }

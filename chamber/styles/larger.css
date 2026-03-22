@@ -1,6 +1,8 @@
 
 
 @media screen and (min-width: 768px) {
+
+   
    
     header {
     flex-wrap: nowrap;
@@ -74,4 +76,30 @@
         grid-template-columns: repeat(3,1fr);
         
     }
+
+    
+    /* HOME */
+
+    #spotlights {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .home-cards {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+        margin: 1rem;
+    }
+
+    .home-cards .card {
+        margin: 0;
+    }
+
+    .hero-text {
+        max-width: 600px;
+    }
+
+    
+
 }
