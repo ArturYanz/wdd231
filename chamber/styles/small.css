@@ -389,3 +389,134 @@ footer {
     margin-top: 1rem;
     font-weight: bold;
 }
+
+/* JOIN */
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+label {
+    margin-bottom: .8rem;
+    font-weight: 500;
+}
+
+input,
+select,
+textarea {
+    padding: .7rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #000;
+}
+
+form [type="submit"] {
+    background-color: #731818;
+    color: #fff;
+    border: none;
+    padding: .8rem;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+form [type="submit"]:hover {
+    background-color: #333;
+}
+
+input:required,
+textarea:required,
+select:required {
+    border-left: 3px solid red;
+}
+
+input:required:valid,
+textarea:required:valid,
+select:required:valid {
+    border-left: 3px solid green;
+}
+
+
+.membership-info {
+    display: flex;
+    flex-direction: column;
+}
+.info-card{
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 20px;
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.info-card p {
+    margin: .5rem 0;
+}
+
+.info-card a {
+    display: block;
+    margin: 1rem 0;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color: #340707;
+    padding: 1rem;
+    border-radius: 50px;
+}
+
+.info-card a:hover {
+    background-color: #333;
+}
+
+#membership-modal {
+    background-color: var(--secondary-color);
+    margin: auto;
+    padding: 2rem;
+    border-radius: 20px;
+}   
+
+#membership-modal h2 {
+    border-bottom: 3px solid var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+#membership-modal p {
+    
+    font-weight: bold;
+}
+
+#closeModal{
+    position: relative;
+    top: -85px;
+    left: 80%;
+    width: 60px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+}
+
+#closeModal:hover {
+    background-color: #d13131;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 0.7);
+}

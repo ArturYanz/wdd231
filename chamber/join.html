@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce | Join Page</title>
+
+    <link rel="icon" href="images/favicon-32x32.png">
+
+    <meta name="author" content="Arturo Yánez">
+    <meta name="description"
+        content="Join us and be a part of our family. Complete the form to apply">
+
+    <meta property="og:title" content="Chamber of Commerce | Join Page">
+    <meta property="og:description"
+        content="Join us and be a part of our family. Complete the form to apply">
+    <meta property="og:url" content="https://arturyanz.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://arturyanz.github.io/wdd231/chamber/images/og-image-chamber.jpg">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/chamber.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="images/chile-logo.webp" alt="Site Logo" width="60" height="60">
+        <span>Santiago de Chile Chamber of Commerce</span>
+
+        <button id="burger-btn" aria-label="Open navigation menu"></button>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" aria-current="page">Directory</a></li>
+                <li class="current"><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Join</h1>
+        
+
+        <div class="join-grid">
+
+            <form method="GET" action="thankyou.html" class="designOne">
+                <label>First Name <input type="text" name="first" required autocomplete="given-name"
+                        title="Your First Name"></label>
+                <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                <label>Cell Phone <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes"
+                        placeholder="123-456-1234"></label>
+                <label>Email <input type="email" name="email" required placeholder="example123@gmail.com" title="Your Email"
+                        autocomplete="email"></label>
+            
+                <label>Organization Title
+                    <input type="text" name="orgtitle" autocomplete="organization-title"
+                        title="Only letters, spaces, hyphens (min 7 characters)">
+                </label>
+            
+                <label>Bussines Name
+                    <input type="text" name="business" required autocomplete="organization" title="Yous business name">
+                </label>
+            
+                <label>Membership Level
+                    <select name="membership" required>
+                        <option value="">Select One</option>
+                        <option value="normal">No Membership</option>
+                        <option value="bronze">Bronce</option>
+                        <option value="silver">Silver</option>
+                        <option value="gold">Gold</option>
+                    </select>
+                </label>
+            
+                <label>Business Description
+                    <textarea name="description" title="Describe your business"></textarea>
+                </label>
+            
+                <input type="hidden" id="timestamp" name="timestamp">
+            
+            
+                <input type="submit" value="Join our Chamber">
+            </form>
+            
+            <div class="membership-info">
+            
+                <section class="info-card">
+                    <h3>No Membership</h3>
+                    <p></p>
+                    <a href="#" data-level="noMember">Learn More</a>
+                </section>
+            
+                <section class="info-card">
+                    <h3>Bronze Membership</h3>
+                    <p>Basic benefits and advertising</p>
+                    <a href="#" data-level="bronze">Learn More</a>
+                </section>
+            
+                <section class="info-card">
+                    <h3>Silver Membership</h3>
+                    <p>Advanced benefits and advertising</p>
+                    <a href="#" data-level="silver">Learn More</a>
+                </section>
+            
+                <section class="info-card">
+                    <h3>Gold Membership</h3>
+                    <p>Premium benefits and advertising</p>
+                    <a href="#" data-level="gold">Learn More</a>
+                </section>
+            </div>
+            
+            <dialog id="membership-modal"></dialog>
+        </div>
+    </main>
+
+    <footer>
+        <div class="info">
+            <p><strong>Santiago Chamber of Commerce</strong></p>
+            <p>Av. Matta 3845</p>
+            <p>info@scamara.org</p>
+            <p>+56 9 4328 9874</p>
+        </div>
+        <div class="social">
+
+            <a href="https://www.facebook.com" target="_blank"><img src="../images/facebook.svg"
+                    alt="Facebook profile link" width="16" height="16"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="../images/linkedin.svg"
+                    alt="Linked In profile link" width="16" height="16"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="../images/twitter-x.svg"
+                    alt="Twitter profile link" width="16" height="16"></a>
+        </div>
+        <div class="personal">
+            <p>WDD231 Class Project</p>
+            <p>Arturo Yánez</p>
+            <p>&copy;<span id="currentyear"></span> Santiago Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
