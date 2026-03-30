@@ -61,24 +61,24 @@
                 <label>First Name <input type="text" name="first" required autocomplete="given-name"
                         title="Your First Name"></label>
                 <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
-                <label>Cell Phone <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes"
+                <label>Cell Phone <input type="tel" name="phone" autocomplete="tel" required title="A Phone Number with dashes"
                         placeholder="123-456-1234"></label>
                 <label>Email <input type="email" name="email" required placeholder="example123@gmail.com" title="Your Email"
                         autocomplete="email"></label>
             
                 <label>Organization Title
                     <input type="text" name="orgtitle" autocomplete="organization-title"
-                        title="Only letters, spaces, hyphens (min 7 characters)">
+                        pattern="[A-Za-z\s\-]{7,}" title="Only letters, spaces, hyphens (min 7 characters)">
                 </label>
             
-                <label>Bussines Name
+                <label>Business Name
                     <input type="text" name="business" required autocomplete="organization" title="Yous business name">
                 </label>
             
                 <label>Membership Level
                     <select name="membership" required>
                         <option value="">Select One</option>
-                        <option value="normal">No Membership</option>
+                        <option value="np">NP Membership</option>
                         <option value="bronze">Bronce</option>
                         <option value="silver">Silver</option>
                         <option value="gold">Gold</option>
@@ -100,29 +100,53 @@
                 <section class="info-card">
                     <h3>No Membership</h3>
                     <p></p>
-                    <a href="#" data-level="noMember">Learn More</a>
+                    <a href="#" data-modal="np-modal">Learn More</a>
                 </section>
             
                 <section class="info-card">
                     <h3>Bronze Membership</h3>
                     <p>Basic benefits and advertising</p>
-                    <a href="#" data-level="bronze">Learn More</a>
+                    <a href="#" data-modal="bronze-modal">Learn More</a>
                 </section>
             
                 <section class="info-card">
                     <h3>Silver Membership</h3>
                     <p>Advanced benefits and advertising</p>
-                    <a href="#" data-level="silver">Learn More</a>
+                    <a href="#" data-modal="silver-modal">Learn More</a>
                 </section>
             
                 <section class="info-card">
                     <h3>Gold Membership</h3>
                     <p>Premium benefits and advertising</p>
-                    <a href="#" data-level="gold">Learn More</a>
+                    <a href="#" data-modal="gold-modal">Learn More</a>
                 </section>
             </div>
             
-            <dialog id="membership-modal"></dialog>
+            <dialog id="np-modal">
+                <h2>NP Membership</h2>
+                <p>For non-profit organizations. No fee.</p>
+                <button class="close-btn">Close</button>
+            </dialog>
+        
+            <dialog id="bronze-modal">
+                <h2>Bronze Membership</h2>
+                <p>Entry level option with networking and directory.</p>
+                <button class="close-btn">Close</button>
+            </dialog>
+
+            <dialog id="silver-modal">
+                <h2>Silver Membership</h2>
+                <p>Includes all Bronze benefits plus training workshops and discounts on chamber events.</p>
+                <button class="close-btn">Close</button>
+            </dialog>
+
+            <dialog id="gold-modal">
+                <h2>Gold Membership</h2>
+                <p>Full access to all benefits, including premium advertising, featured listings, and exclusive events.</p>
+                <button class="close-btn">Close</button>
+            </dialog>
+        
+        
         </div>
     </main>
 

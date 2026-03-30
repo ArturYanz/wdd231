@@ -242,53 +242,62 @@ if (document.querySelector("#forecast")) {
 
 //JOIN DIALOG
 
-const modal = document.querySelector("#membership-modal")
 
-const membershipData = {
 
-    noMember: {
-        title: "No Membership",
-        content: "For non-profit organizations. No fee."
-    },
-    bronze: {
-        title: "Bronze Membership",
-        content: "Entry level option with networking and directory listing to increase your business visibility"
-    },
-    silver: {
-        title: "Silver Membership",
-        content: "Includes all Bronze benefits plus training workshops and discounts on chamber events."
-    },
-    gold: {
-        title: "Gold Membership",
-        content: "Full access to all benefits, including premium advertising, feactured listings, and exlusive events."
-    }
-};
-
-document.querySelectorAll("[data-level]").forEach(link => {
+document.querySelectorAll("[data-modal]").forEach(link => {
     link.addEventListener("click", (e) => {
         e.preventDefault();
 
-        const level = link.dataset.level;
-        const data = membershipData[level];
-
-        modal.innerHTML = `
-        <h2>${data.title}</h2>
-        <p>${data.content}</p>
-        <button id="closeModal">Close</button>
-        `;
+        const modalId = link.dataset.modal;
+        const modal = document.querySelector(`#${modalId}`);
 
         modal.showModal();
 
-        document.querySelector("#closeModal").addEventListener("click", () => {
+        modal.querySelector(".close-btn").addEventListener("click", () => {
             modal.close();
+        });
+
+        modal.addEventListener("click", (e) => {
+            if (e.target === modal) {
+                modal.close();
+            }
         });
 
     });
 });
 
+const timestamp = document.querySelector("#timestamp");
 
-modal.addEventListener("click", (e) => {
-    if (e.target === modal) {
-        modal.close();
-    }
-});
+if (timestamp) {
+    timestamp.value = new Date().toISOString();
+}
+
+
+// Thanks Page
+
+const params = new URLSearchParams(window.location.search);
+
+const results = document.querySelector("#results");
+
+if (results) {
+    const name = params.get("first");
+    const last = params.get("last");
+    const fullName = `${name || ""} ${last || ""}`;
+    const email = params.get("email");
+    const phone = params.get("phone");
+    const business = params.get("business");
+    const timestamp = params.get("timestamp");
+
+    results.innerHTML = `
+    <p><strong>Fullname:</strong> ${fullName || "Not provided"}</p>
+    <p><strong>Email:</strong> ${ email || "Not provided"}</p>
+    <p><strong>Phone:</strong> ${ phone || "Not provided"}</p>
+    <p><strong>Business:</strong> ${ business || "Not provided"}</p>
+    <p><strong>Submitted:</strong> ${ timestamp || "Not provided"}</p>
+    `
+    
+
+
+
+
+}
