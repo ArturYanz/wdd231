@@ -470,6 +470,10 @@ select:required:valid {
     border-radius: 20px;
     color: white;
     background-color: var(--primary-color);
+
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s ease forwards;
 }
 
 .info-card p {
@@ -555,11 +559,6 @@ dialog p {
 
 /* Animacion */
 
-.info-card {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 0.8s ease forwards;
-}
 
 .info-card:nth-child(1) {
     animation-delay: 0.1s;
