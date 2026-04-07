@@ -301,3 +301,65 @@ if (results) {
 
 
 }
+
+
+// DIRECTORY
+
+import { places } from "../data/directory.mjs";
+
+const directoryInfo = document.querySelector(".directory-cards");
+
+if (directoryInfo) {
+    
+    places.forEach((place, index) => {
+        const isFirst = index === 0;
+
+        const directoryCard = document.createElement("section");
+
+        directoryCard.innerHTML = `
+    <h2>${place.name}</h2>
+    <figure>
+    <img src="${place.images}" alt="${place.name}" loading="${isFirst ? "eager" : "lazy"}" width="300" height="200" ${isFirst ? 'fetchpriority="high"' : ''}>
+    </figure>
+    <address>${place.location}</address>
+    <p>${place.description}</p>
+    <button>Learn More</button>
+    `;
+
+        directoryInfo.appendChild(directoryCard);
+    });
+}
+ 
+
+
+// VISITS MESSAGE
+
+
+const messageElement = document.querySelector("#visit-message");
+
+const now = Date.now();
+
+const lastVisit = localStorage.getItem("lastVisit");
+
+let message = "";
+
+if (!lastVisit) {
+
+    message = "Welcome! Let us know if you have any questions.";
+} else {
+    const difference = now - Number(lastVisit);
+    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+
+    if (days < 1) {
+        message = "Back so soon! Awesome!";
+    } else if (days === 1) {
+
+        message = "You last visited 1 day ago."
+    } else {
+        message = `You last visited ${days} days ago.`
+    }
+}
+
+messageElement.textContent = message;
+
+localStorage.setItem("lastVisit", now);

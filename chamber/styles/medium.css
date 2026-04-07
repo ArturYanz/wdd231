@@ -1,0 +1,138 @@
+@media screen and (min-width: 641px) {
+
+
+    /* FOOTER */
+    
+    footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .personal p {
+        margin-right: .5rem;
+    }
+
+    /* CARDS */
+
+    #members.grid {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    /* HOME */
+
+    #spotlights {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin: 1rem;
+    }
+
+    .home-cards .card {
+        margin: 0;
+    }
+
+    .hero-text {
+        max-width: 600px;
+    }
+
+
+    
+
+    .join-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+
+    .directory-cards section {
+      
+        grid-template-areas:
+        
+        "photo name"
+        "photo description"
+        "photo location"
+        "photo button"
+        ;
+    }
+
+
+    .directory-cards figure {
+        transition: transform 0.3s, filter 0.3s;
+        grid-area: photo;
+        margin-right: 1rem;
+    }
+
+    .directory-cards img:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+    }
+
+
+
+}
+
+@media screen and (min-width: 900px) {
+
+    header {
+            flex-wrap: nowrap;
+            padding: 1.5rem;
+        }
+    
+    
+    
+        header span {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    
+        header img {
+            width: 60px;
+        }
+    
+        header nav {
+            font-size: 25px;
+        }
+    
+    
+        header nav {
+            width: auto;
+        }
+    
+        #burger-btn {
+            display: none;
+        }
+    
+        .navigation {
+            display: flex;
+            flex-direction: row;
+        }
+    
+        .navigation a:hover {
+            background-color: var(--primary-color);
+            padding: 0;
+            border-radius: 0;
+            font-weight: bold;
+            border-bottom: 4px solid white;
+        }
+    
+        .navigation .current a:hover {
+            color: yellow;
+            font-weight: bold;
+            background-color: #600808;
+            padding: 0 10px;
+            border-radius: 10px;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            border-bottom: 4px solid yellow;
+    
+        }
+}

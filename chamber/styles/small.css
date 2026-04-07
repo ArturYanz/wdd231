@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+main {
+    min-height: 80vh;
+}
+
 body {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     background-color: var(--secondary-color);
@@ -578,4 +582,98 @@ dialog p {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+
+
+/* DIRECTORY */
+
+.directory-cards {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    grid-template-columns: 1fr;
+    min-height: 800px;
+    
+    
+}
+
+.directory-cards section {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgb(0 0 0/ 10%);
+    min-height: 350px;
+
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "photo"
+    "description"
+    "location"
+    "button";
+    
+
+}
+
+
+
+.directory-cards h2 {
+    margin-bottom: .5rem;
+    color: white;
+}
+
+.directory-cards img {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    aspect-ratio: 3 / 2;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    display: block;
+    object-fit: cover;
+    margin: auto;
+    
+}
+
+.directory-cards address {
+    font-style: italic;
+    margin: .5rem 0;
+    color: #fff;
+    font-weight: bold;
+    grid-area: location;
+    text-align: center;
+    
+
+}
+
+.directory-cards p {
+    color: white;
+    margin-top: 1rem;
+    
+}
+
+.directory-cards button {
+    margin-top: .5rem;
+    padding: .5rem;
+    border: none;
+    background-color: white;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    
+}
+
+.directory-cards button:hover {
+    background-color: #838181;
+}
+
+#visit-message {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    margin: 1rem;
 }
