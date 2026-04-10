@@ -1,0 +1,19 @@
+[
+    {
+        "title": "Inception",
+        "genre": "Sci-Fi",
+        "year": 2010,
+        "rating": 8.8,
+        "image": "http",
+        "description": "good movie"
+    },
+
+    {
+        "title": "The Avengers",
+        "genre": "Action/Adventure",
+        "year": 2012,
+        "rating": 8.8,
+        "image": "http",
+        "description": "good movie to"
+    }
+]
