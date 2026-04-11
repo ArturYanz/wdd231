@@ -33,10 +33,18 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
+        <nav class="navbar">
+    
+            <div class="brand">
+                <img src="images/logo-pop.webp" alt="CineScope logo" class="logo">
+                <span class="site-name">CineScope</span>
+            </div>
+    
+            <button class="menu-btn">☰</button>
+    
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="movies.html">Movies</a></li>
+                <li><a class="current" href="movies.html" aria-current="page">Movies</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
@@ -46,11 +54,42 @@
         <section>
             <h1>Movie Catalog</h1>
 
+            <p id="last-movie"></p>
+
             <div class="movies-container"></div>
         </section>
+
+        <div id="movie-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <div id="modal-body"></div>
+            </div>
+        </div>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="info">
+            <p><strong>CineScope&copy;</strong></p>
+            <p>Av. Matta 3845</p>
+            <p>info@cinescope.com</p>
+            <p>+56 9 4328 9874</p>
+        </div>
+        <div class="social">
+    
+            <a href="https://www.facebook.com" target="_blank"><img src="../images/facebook.svg" alt="Facebook profile link"
+                    width="16" height="16"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="../images/linkedin.svg"
+                    alt="Linked In profile link" width="16" height="16"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="../images/twitter-x.svg" alt="Twitter profile link"
+                    width="16" height="16"></a>
+        </div>
+        <div class="personal">
+            <p>WDD231 Class Project</p>
+            <p>Arturo Yánez</p>
+            <p>&copy;<span id="currentyear"></span> Santiago Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
 </body>
 
 </html>

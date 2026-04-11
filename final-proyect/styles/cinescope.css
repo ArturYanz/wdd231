@@ -17,6 +17,12 @@ body {
     color: var(--text-color);
 }
 
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
 header, footer {
     background-color: var(--secondary-color);
     color: white;
@@ -39,20 +45,387 @@ main {
     padding: 1rem;
     max-width: 1200px;
     margin: 0 auto;
+    background-color: var(--primary-color);
+}
+
+h1 {
+    margin-bottom: 1rem;
 }
 
 .movies-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
+.card {
+    display: grid;
+    background-color: var(--details-color);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+    grid-template-areas: 
+    "poster"
+    "title"
+    "genre"
+    "year"
+    "rating";
+    justify-content: center;
+    max-width: 350px;
+}
+
+.card h3 {
+    grid-area: title;
+}
+
+.card .year {
+    grid-area: year;
+}
+
+.card .rating {
+    grid-area: rating;
+}
+
+.card .genre {
+    grid-area: genre;
+}
+
+.card img {
+    border-radius: 10px;
+    grid-area: poster;
+}
+
+.card:hover {
+    transform:  scale(1.03);
+    transition: 0.2s;
+}
+
+.card .genre, .card .rating, .card .year, .card h3 {
+    margin: .2rem .5rem;
+}
+
+#last-movie{
+    font-weight: bold;
+    margin-bottom: 1rem;
+    background-color: var(--details-color);
+    padding: .5rem;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.hero {
+    background-color: var(--secondary-color);
+
+    background-image: url("../images/pop-corn-cinema.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 2rem;
+}
+
+.hero p {
+    margin-top: .5rem;
+}
+
+.hero a {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: var(--details-color);
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero a:hover {
+    background-color: #af9138;
+    color: #f5f5f5;
+}
+
+section h2 {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.featured {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-card {
+    display: grid;
+    background-color: var(--details-color);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+    grid-template-areas:
+        "poster"
+        "title"
+        "genre"
+        "year"
+        "rating";
+    justify-content: center;
+    max-width: 350px;
+    
+}
+
+.home-card img {
+    border-radius: 10px;
+}
+
+.home-card h3, .home-card p {
+    margin: .5rem;
+    text-align: center;
+}
+
+/* MODALS */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 70%);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 1rem;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 20px;    
+}
+
+.close-btn {
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-left: 95%;
+    
+}
+
+.close-btn:hover {
+    color: var(--secondary-color);
+    font-size: 1.6rem;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1rem;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.info p,
+.personal p {
+    margin-top: .5rem;
+    margin-left: 10px;
+    margin-bottom: .5rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social img {
+    width: 60px;
+    height: auto;
+    border: 1px solid #fff5f5;
+    background-color: #fff5f5;
+    padding: .5rem;
+    border-radius: 44px;
+}
+
+.social img:hover {
+    background-color: #999;
+    border: #999;
+}
+
+/* NAV */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.logo {
+    width: 44px;
+    height: 44px;
+}
+
+.site-name {
+    font-weight: bold;
+    color: var(--details-color);
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+
+    font-size: 1.2rem;
+}
+
+.nav-links a:hover {
+    
+    text-decoration: 3px underline;
+}
+
+.current {
+    color: var(--details-color);
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* MENU BTN MOBILE */
+
+@media screen and (max-width: 760px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: var(--secondary-color);
+        position: absolute;
+        top: 70px;
+        right: 1rem;
+        padding: 1rem;
+        border-radius: 10px;
+        border: 2px solid var(--details-color);
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+}
+
+/* FORM */
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--details-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
+    font-weight: bold;
+}
+
+input {
+    padding: .8rem;
+    border-radius: 20px;
+    border: none;
+}
+
+input:required
+{
+    border-left: 3px solid red;
+}
+
+
+input:required:valid {
+    border-left: 3px solid green;
+}
+
+form button {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+form button:hover {
+    background-color: #333;
+    color: var(--text-color);
+}
+
 /* TABLET */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 761px) {
+
+    
     .movies-container {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .featured {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-card {
+        max-width: 95%;
+    }
+
+    .hero img {
+        display: relative;
+        width: auto;
+        height: 300px;
+    }
+
+    footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .personal p {
+        margin-right: .5rem;
     }
 }
 /* DESKTOP */
@@ -61,4 +434,19 @@ main {
     .movies-container {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .card {
+        grid-template-areas: 
+        "poster title"
+        "poster genre"
+        "poster year"
+        "poster rating";
+        gap: 1rem;
+        margin: 1rem;
+    }
+    .featured {
+     grid-template-columns: repeat(3, 1fr);
+    }
+ 
+    
 }

@@ -4,7 +4,7 @@
         "genre": "Sci-Fi",
         "year": 2010,
         "rating": 8.8,
-        "image": "http",
+        "image": "images/inception-poster.webp",
         "description": "good movie"
     },
 
@@ -13,7 +13,7 @@
         "genre": "Action/Adventure",
         "year": 2012,
         "rating": 8.8,
-        "image": "http",
+        "image": "images/the-avengers-poster.webp",
         "description": "good movie to"
     }
 ]
