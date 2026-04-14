@@ -6,11 +6,14 @@ const email = parameters.get("email");
 
 const genre = parameters.get("genre");
 
+const frequency = parameters.get("frequency");
+
 
 const result = document.querySelector("#result");
 
 result.innerHTML = `
-Thanks, ${name}! <br>
-We will contact you at: ${email} <br>
-Favorite genre: ${genre}
+Thanks, ${name}! you are a true <strong class="thank-strong">CineScoper</strong>! <br> <br>
+We will contact you at: ${email} <br> <br>
+Favorite genre: ${genre} <br> <br>
+Watching frequency: ${frequency}
 `;

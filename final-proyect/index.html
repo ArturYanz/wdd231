@@ -15,19 +15,19 @@
     <meta property="og:description"
         content="CineScope is where you can find the best information about the movies you love!">
     <meta property="og:url" content="https://arturyanz.github.io/wdd231/final-proyect/index.html">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="images/pop-corn-cinema.webp">
 
     
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
-        rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet" media="print" onload="this.media='all'">
 
     <link rel="stylesheet" href="styles/cinescope.css">
 
 
-    <script src="scripts/cinescope.js" defer></script>
+    <script type="module" src="scripts/cinescope.js"></script>
 
 </head>
 <body>
@@ -35,11 +35,11 @@
         <nav class="navbar">
 
             <div class="brand">
-                <img src="images/logo-pop.webp" alt="CineScope logo" class="logo">
+                <img src="images/logo-pop.webp" alt="CineScope logo" class="logo" width="44" height="49">
                 <span class="site-name">CineScope</span>
             </div>
 
-            <button class="menu-btn">☰</button>
+            <button class="menu-btn" aria-label="Open navigation menu">☰</button>
 
             <ul class="nav-links">
                 <li><a class="current" href="index.html" aria-current="page">Home</a></li>
@@ -54,6 +54,17 @@
             <h1>Welcome to CineScope</h1>
             <p>Discover movies, ratings, and more</p>
             <a href="movies.html">Explore Movies</a>
+        </section>
+
+        <section class="intro">
+            <h2>Why We Love Movies</h2>
+            <p>
+                Movies have a unique way of bringing people together, allowing us to experience stories beyond our own lives.
+                We love films because they make us feel-whether it's excitement, joy, fear, or even sadness. They transport
+                us to different worlds, introdduce us to unforgettable characters, and help us see a life from new perspectives.
+                From epic adventures to heartfelt stories, movies remind us of our imagination, our emotions, and the power
+                of storytelling.
+            </p>
         </section>
 
         <section>
@@ -81,7 +92,7 @@
         <div class="personal">
             <p>WDD231 Class Project</p>
             <p>Arturo Yánez</p>
-            <p>&copy;<span id="currentyear"></span> Santiago Chamber of Commerce</p>
+            <p>&copy;<span id="currentyear"></span> CineScope</p>
             <p id="lastModified"></p>
         </div>
     </footer>

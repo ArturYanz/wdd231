@@ -14,21 +14,21 @@
 
     <meta property="og:title" content="CineScope | Movies Page">
     <meta property="og:description" content="Information, ratings and brief descriptions of all movies you can imagine">
-    <meta property="og:url" content="https://arturyanz.github.io/wdd231/final-proyect/index.html">
-    <meta property="og:image" content="">
+    <meta property="og:url" content="https://arturyanz.github.io/wdd231/final-proyect/movies.html">
+    <meta property="og:image" content="images/pop-corn-cinema.webp">
 
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
-        rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'">
 
     <link rel="stylesheet" href="styles/cinescope.css">
 
 
-    <script src="scripts/cinescope.js" defer></script>
+    <script type="module" src="scripts/cinescope.js"></script>
 </head>
 
 <body>
@@ -36,11 +36,11 @@
         <nav class="navbar">
     
             <div class="brand">
-                <img src="images/logo-pop.webp" alt="CineScope logo" class="logo">
+                <img src="images/logo-pop.webp" alt="CineScope logo" class="logo" width="44" height="49">
                 <span class="site-name">CineScope</span>
             </div>
     
-            <button class="menu-btn">☰</button>
+            <button class="menu-btn" aria-label="Open navigation menu">☰</button>
     
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -56,7 +56,11 @@
 
             <p id="last-movie"></p>
 
-            <div class="movies-container"></div>
+            <div class="movies-container">
+                <div class="skeleton"></div>
+                <div class="skeleton"></div>
+                <div class="skeleton"></div>
+            </div>
         </section>
 
         <div id="movie-modal" class="modal">
@@ -86,7 +90,7 @@
         <div class="personal">
             <p>WDD231 Class Project</p>
             <p>Arturo Yánez</p>
-            <p>&copy;<span id="currentyear"></span> Santiago Chamber of Commerce</p>
+            <p>&copy;<span id="currentyear"></span> CineScope</p>
             <p id="lastModified"></p>
         </div>
     </footer>

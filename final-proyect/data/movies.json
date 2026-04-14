@@ -4,16 +4,211 @@
         "genre": "Sci-Fi",
         "year": 2010,
         "rating": 8.8,
+        "director": "Christopher Nolan",
+        "animated": false,
         "image": "images/inception-poster.webp",
-        "description": "good movie"
+        "description": "A skilled thief who specializes in extracting secrets from dreams is offered a chance at redemption if he can successfully plant an idea into a target’s subconscious. As the layers of dreams deepen, the line between reality and illusion becomes dangerously blurred."
+    },
+    {
+        "title": "The Avengers",
+        "genre": "Action",
+        "year": 2012,
+        "rating": 8.0,
+        "director": "Joss Whedon",
+        "animated": false,
+        "image": "images/the-avengers-poster.webp",
+        "description": "When a global threat emerges, Earth’s mightiest heroes must unite for the first time. Clashing personalities and high stakes push the team to their limits as they learn to work together to save the world."
+    },
+    {
+        "title": "Interstellar",
+        "genre": "Sci-Fi",
+        "year": 2014,
+        "rating": 8.6,
+        "director": "Christopher Nolan",
+        "animated": false,
+        "image": "images/interestellar-poster.webp",
+        "description": "A team of explorers travels through a wormhole in space in an attempt to ensure humanity’s survival. The journey explores time, relativity, and the emotional bonds that transcend dimensions."
+    },
+    {
+        "title": "Spider-Man: No Way Home",
+        "genre": "Superhero",
+        "year": 2021,
+        "rating": 8.2,
+        "director": "Jon Watts",
+        "animated": false,
+        "image": "images/spiderman-nwh-poster.webp",
+        "description": "With his identity revealed, Peter Parker seeks help from Doctor Strange. A spell goes wrong, opening the multiverse and bringing dangerous villains from other realities into his world."
+    },
+    {
+        "title": "Avatar: The Way of Water",
+        "genre": "Sci-Fi",
+        "year": 2022,
+        "rating": 7.6,
+        "director": "James Cameron",
+        "animated": false,
+        "image": "images/avatar2-poster.webp",
+        "description": "Jake Sully and his family must explore new regions of Pandora after being forced to leave their home. They encounter ocean tribes and face new threats from returning human forces."
+    },
+    {
+        "title": "Oppenheimer",
+        "genre": "Drama",
+        "year": 2023,
+        "rating": 8.5,
+        "director": "Christopher Nolan",
+        "animated": false,
+        "image": "images/oppenheimer-poster.webp",
+        "description": "The story of J. Robert Oppenheimer and the creation of the atomic bomb. The film explores the ethical dilemmas and political consequences of one of the most significant scientific breakthroughs in history."
+    },
+    {
+        "title": "Barbie",
+        "genre": "Comedy",
+        "year": 2023,
+        "rating": 7.0,
+        "director": "Greta Gerwig",
+        "animated": false,
+        "image": "images/barbie-poster.webp",
+        "description": "Barbie begins questioning her seemingly perfect life, leading her on a journey into the real world. A colorful and humorous exploration of identity and societal expectations."
+    },
+    {
+        "title": "Dune: Part Two",
+        "genre": "Sci-Fi",
+        "year": 2024,
+        "rating": 8.7,
+        "director": "Denis Villeneuve",
+        "animated": false,
+        "image": "images/dune2-poster.webp",
+        "description": "Paul Atreides unites with the Fremen to avenge his family and fulfill his destiny. As war looms, he must navigate prophecy, power, and sacrifice."
+    },
+    {
+        "title": "The Batman",
+        "genre": "Superhero",
+        "year": 2022,
+        "rating": 7.8,
+        "director": "Matt Reeves",
+        "animated": false,
+        "image": "images/the-batman-poster.webp",
+        "description": "A darker, more detective-driven take on Batman as he uncovers corruption in Gotham City. Facing the Riddler, he must confront his own role as a symbol of vengeance."
+    },
+    {
+        "title": "Top Gun: Maverick",
+        "genre": "Action",
+        "year": 2022,
+        "rating": 8.3,
+        "director": "Joseph Kosinski",
+        "animated": false,
+        "image": "images/topgun-poster.webp",
+        "description": "Pete ‘Maverick’ Mitchell returns to train a new generation of pilots for a dangerous mission. As he faces his past, he must prove that skill and instinct still matter in a changing world."
+    },
+    {
+        "title": "Inside Out",
+        "genre": "Animation",
+        "year": 2015,
+        "rating": 8.1,
+        "director": "Pete Docter",
+        "animated": true,
+        "image": "images/insideout-poster.webp",
+        "description": "A unique look into the emotions inside a young girl’s mind as she adapts to a new life. Joy and Sadness must work together to restore emotional balance."
+    },
+    {
+        "title": "Inside Out 2",
+        "genre": "Animation",
+        "year": 2024,
+        "rating": 7.8,
+        "director": "Kelsey Mann",
+        "animated": true,
+        "image": "images/insideout-2-poster.webp",
+        "description": "Riley enters her teenage years and new emotions emerge, disrupting the balance inside her mind. A deeper exploration of growing up and emotional complexity."
+    },
+    {
+        "title": "Frozen",
+        "genre": "Animation",
+        "year": 2013,
+        "rating": 7.4,
+        "director": "Chris Buck & Jennifer Lee",
+        "animated": true,
+        "image": "images/frozen-poster.webp",
+        "description": "A princess sets out on a journey to find her sister, whose magical powers have trapped their kingdom in eternal winter. A story about love, fear, and acceptance."
+    },
+    {
+        "title": "The Super Mario Bros. Movie",
+        "genre": "Animation",
+        "year": 2023,
+        "rating": 7.1,
+        "director": "Aaron Horvath & Michael Jelenic",
+        "animated": true,
+        "image": "images/mariobros-poster.webp",
+        "description": "Mario and Luigi are transported into a vibrant world where they must help Princess Peach stop Bowser. A colorful and energetic animated adventure."
+    },
+    {
+        "title": "Coco",
+        "genre": "Animation",
+        "year": 2017,
+        "rating": 8.4,
+        "director": "Lee Unkrich",
+        "animated": true,
+        "image": "images/coco-poster.webp",
+        "description": "A young boy named Miguel journeys to the Land of the Dead to uncover his family’s history and pursue his passion for music. A heartfelt story about memory and identity."
+    },
+    
+    {
+        "title": "Star Wars: Episode IV - A New Hope",
+        "genre": "Sci-Fi",
+        "year": 1977,
+        "rating": 8.6,
+        "director": "George Lucas",
+        "animated": false,
+        "image": "images/star-wars-poster.webp",
+        "description": "A young farm boy joins a rebellion against a powerful empire. Alongside a rogue smuggler and a wise mentor, he begins a journey that will shape the fate of the galaxy."
+    },
+    {
+        "title": "Jurassic Park",
+        "genre": "Adventure",
+        "year": 1993,
+        "rating": 8.2,
+        "director": "Steven Spielberg",
+        "animated": false,
+        "image": "images/jurassic-park-poster.webp",
+        "description": "A groundbreaking theme park filled with cloned dinosaurs turns into chaos when the creatures break free. A thrilling mix of science, wonder, and survival."
+    },
+    {
+        "title": "The Exorcist",
+        "genre": "Horror",
+        "year": 1973,
+        "rating": 8.1,
+        "director": "William Friedkin",
+        "animated": false,
+        "image": "images/the-exorcist-poster.webp",
+        "description": "A young girl becomes the center of a terrifying supernatural case, leading two priests to perform a dangerous exorcism. Widely considered one of the most influential horror films ever made."
     },
 
     {
-        "title": "The Avengers",
-        "genre": "Action/Adventure",
-        "year": 2012,
-        "rating": 8.8,
-        "image": "images/the-avengers-poster.webp",
-        "description": "good movie to"
+        "title": "Toy Story 4",
+        "genre": "Animation",
+        "year": 2019,
+        "rating": 7.7,
+        "director": "Josh Cooley",
+        "animated": true,
+        "image": "images/toy-story4-poster.webp",
+        "description": "Woody embarks on a new adventure that challenges his understanding of purpose and belonging. Along the way, he reunites with old friends and meets new ones."
+    },
+    {
+        "title": "The Lion King",
+        "genre": "Animation",
+        "year": 1994,
+        "rating": 8.5,
+        "director": "Roger Allers & Rob Minkoff",
+        "animated": true,
+        "image": "images/lionking-poster.webp",
+        "description": "A young lion prince flees his kingdom after tragedy strikes, only to return and reclaim his rightful place. A timeless story of growth, responsibility, and courage."
+    },
+    {
+        "title": "Shrek",
+        "genre": "Animation",
+        "year": 2001,
+        "rating": 7.9,
+        "director": "Andrew Adamson & Vicky Jenson",
+        "animated": true,
+        "image": "images/shrek-poster.webp",
+        "description": "An ogre sets out on a quest to rescue a princess, only to discover that things are not what they seem. A humorous and heartfelt twist on classic fairy tales."
     }
 ]

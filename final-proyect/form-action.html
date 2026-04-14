@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CineScope | Home Page</title>
+    <title>CineScope | Thank You Page</title>
 
     <meta name="author" content="Arturo Yánez">
     <meta name="description" content="CineScope is where you can find the best information about the movies you love!">
@@ -12,23 +12,23 @@
     <link rel="icon" href="images/favicon-32x32.png">
 
 
-    <meta property="og:title" content="CineScope | Home Page">
+    <meta property="og:title" content="CineScope | Thank You Page">
     <meta property="og:description"
         content="CineScope is where you can find the best information about the movies you love!">
-    <meta property="og:url" content="https://arturyanz.github.io/wdd231/final-proyect/index.html">
-    <meta property="og:image" content="">
+    <meta property="og:url" content="https://arturyanz.github.io/wdd231/final-proyect/form-action.html">
+    <meta property="og:image" content="images/pop-corn-cinema.webp">
 
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
-        rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'">
 
     <link rel="stylesheet" href="styles/cinescope.css">
 
-    <script src="scripts/thanks.js" defer></script>
+    <script type="module" src="scripts/thanks.js"></script>
 </head>
 
 <body>
@@ -36,11 +36,11 @@
         <nav class="navbar">
     
             <div class="brand">
-                <img src="images/logo-pop.webp" alt="CineScope logo" class="logo">
+                <img src="images/logo-pop.webp" alt="CineScope logo" class="logo" width="44" height="49">
                 <span class="site-name">CineScope</span>
             </div>
     
-            <button class="menu-btn">☰</button>
+            <button class="menu-btn" aria-label="Open navigation menu">☰</button>
     
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -75,7 +75,7 @@
         <div class="personal">
             <p>WDD231 Class Project</p>
             <p>Arturo Yánez</p>
-            <p>&copy;<span id="currentyear"></span> Santiago Chamber of Commerce</p>
+            <p>&copy;<span id="currentyear"></span> CineScope</p>
             <p id="lastModified"></p>
         </div>
     </footer>

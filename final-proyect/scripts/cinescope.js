@@ -21,21 +21,27 @@ if (container) {
     getMovies();
 }
 
+function shuffleArray(array) {
+    return array.sort(() => Math.random() - 0.5);
+}
+
 
 function displayMovies(movies) {
     container.innerHTML = "";
 
-    movies.forEach(movie => {
+    const randomMovies = shuffleArray(movies);
+
+    randomMovies.forEach((movie, index) => {
         const card = document.createElement("div");
         card.classList.add("card");
-        card.classList.add("#movie-card")
+        card.classList.add("movie-card")
 
         card.innerHTML = `
-        <img src="${movie.image}" alt="${movie.title}">
+        <img src="${movie.image}" alt=" Poster of the movie ${movie.title}" loading="${index < 3 ? 'eager' : 'lazy'}" fetchpriority="${index < 5 ? 'high' : 'auto'} width="300" height="450">
         <h3>${movie.title}</h3>
         <p class="genre">${movie.genre}</p>
-        <p class="year">${movie.year}</p>
-        <p class="rating">⭐ ${movie.rating}</p>
+        <p class="year"><strong>${movie.year}</strong></p>
+        <p class="rating">★ <strong>${movie.rating}</strong></p>
         `;
 
         card.addEventListener("click", () => {
@@ -56,10 +62,11 @@ function openModal(movie) {
 
 
     modalBody.innerHTML = `
-    <h2>${movie.title}</h2>
+    <h2>${movie.title}</h2> <br>
     <p><strong>Genre:</strong> ${movie.genre}</p>
     <p><strong>Year:</strong> ${movie.year}</p>
     <p><strong>Rating:</strong> ${movie.rating}</p>
+    <p><strong>Director:</strong> ${movie.director}</p> <br>
     <p>${movie.description}</p>
     `;
 
@@ -114,18 +121,20 @@ async function getFeaturedMovies() {
     }
 }
 
+
+
 function displayFeatured(movies) {
 
     
     if (!featuredContainer) return;
 
    
-    const featured = movies.slice(0, 3);
+    const featured = shuffleArray(movies).slice(0, 3);
 
     featured.forEach(movie => {
         featuredContainer.innerHTML += `
         <div class="home-card">
-            <img src="${movie.image}" alt="${movie.title}" loading="lazy">
+            <img src="${movie.image}" alt=" Poster of the movie ${movie.title}" loading="lazy" width="300" height="450">
             <h3>${movie.title}</h3>
             <p>${movie.genre}</p>
         </div>
