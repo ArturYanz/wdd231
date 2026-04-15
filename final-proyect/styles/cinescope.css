@@ -15,7 +15,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: var(--primary-color);
     color: var(--text-color);
-    font-display: swap;
 
     display: flex;
     flex-direction: column;
@@ -154,9 +153,7 @@ h1 {
     font-size: 2rem;
 }
 
-.hero p {
-    margin-top: .5rem;
-}
+
 
 .hero a {
     display: inline-block;
@@ -261,6 +258,16 @@ footer {
     justify-content: space-between;
     background-color: var(--secondary-color);
     color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: var(--details-color);
 }
 
 .info p,
